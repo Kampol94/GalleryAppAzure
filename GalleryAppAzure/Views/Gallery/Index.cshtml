@@ -4,17 +4,9 @@
     <div class="gallery-content">
         @foreach (var image in Model.Images)
         {
-            <div class="gallery-image"></div>
-            <span>image.Title</span>
-            <ul>
-                @foreach (var tag in image.Tags)
-                {
-                    <li>
-                        tag.Description
-                    </li>
-                }
-            </ul>
+        <div class="gallery-image-conteiner">
+            <div class="gallery-image" style="background-image:url(@image.Url)"></div>
+        </div>
         }
-
     </div>
 </div>
