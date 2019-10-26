@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using GalleryAppAzure.Data.Models;
 using JetBrains.Annotations;
 using Microsoft.EntityFrameworkCore;
@@ -13,5 +14,10 @@ namespace GalleryAppAzure.Data
 
         public DbSet<GalleryImage> GalleryImages { get; set; }
         public DbSet<Tag> Tags { get; set; }
+
+        public IEnumerable<GalleryImage> Include()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
