@@ -23,7 +23,7 @@ namespace GalleryAppAzure.Services
 
         public GalleryImage GetById(int id)
         {
-            return _galleryAppAzureDbContext.GalleryImages.Find(id);
+            return GetAll().Where(img => img.Id == id).First();
         }
 
         public IEnumerable<GalleryImage> GetByTag(string tag)

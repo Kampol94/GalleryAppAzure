@@ -34,5 +34,23 @@ namespace GalleryAppAzure.Controllers
             };
             return View(model);
         }
+
+        public IActionResult Detail(int id)
+        {
+
+
+            var image = _imageService.GetById(id);
+
+            var model = new GalleryDetailModel()
+            {
+                Id = image.Id,
+                Title = image.Title,
+                CreateOn = image.Created,
+                Url = image.Url,
+                Tags = image.Tags.Select(t => t.Description).ToList()
+
+            };
+            return View(model);
+        }
     }
 }
