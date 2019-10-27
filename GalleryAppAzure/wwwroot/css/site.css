@@ -19,7 +19,37 @@
     width: 300px;
     margin: 12px;
     position: relative;
+    
+}
+.drop-shadow {
     box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2), 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.image-detail-container{
+    text-align: left;
+
+}
+.image-detail{
+    padding: 12px;
+    border-radius: 2px;
+}
+
+.image-detail-meta{
+    padding: 2px;
+}
+
+.submit{
+    padding:2%;
+}
+.btn-file{
+    margin: 6px;
+}
+#upload-form{
+    padding: 60px;
+    margin: auto;
+    width: 50%;
+}
+.upload-container{
+    padding: 2%;
 }
 
 body {
